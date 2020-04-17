@@ -88,7 +88,10 @@ public class ListPanel extends JPanel{
             this.add(Price,BorderLayout.CENTER);
         }
     }
-   
+    
+   JButton Calcbtn=new JButton("계산");
+   JLabel 금액=new JLabel("투입금액");
+ //  Container contentPane;
     
     public class chargel extends JPanel{
     	JLabel 금액=new JLabel("투입금액");
@@ -105,11 +108,11 @@ public class ListPanel extends JPanel{
     			this.add(calcBtn,BorderLayout.EAST);
     		}
     	}
-    	
-    	JLabel la[]=new JLabel[8];
-    	JTextField[] tf=new JTextField[8];
+    	JLabel la[]=new JLabel[6];
+    	JTextField[] tf=new JTextField[6];
     	JTextField source=new JTextField();
-    	public class chardl extends JPanel{
+    	
+    	public class textl extends JPanel{
     		String[] text={"오만원","만원","천원","500원","100원","50원"};
     		int []unit={50000,10000,1000,500,100,50};
     		for(int i=0; i<unit.length; i++)
