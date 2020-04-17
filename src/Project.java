@@ -2,6 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
+import javax.swing.border.TitledBorder;
 
 
 public class Project extends JFrame{
@@ -26,7 +27,7 @@ public class Project extends JFrame{
         Title.setBounds(12, 10, 460, 29);
         this.getContentPane().add(Title);
 
-
+        NorthPanel.add(Title,BorderLayout.NORTH);
 
         CenterPanel.add(new MenuPanel("imagePath"));
         CenterPanel.add(new MenuPanel("imagePath"));
