@@ -20,7 +20,7 @@ public class Project extends JFrame{
         this.setVisible(true);
     }
 
-
+    ///상단부
     public class MenuPanel extends JPanel {
         JButton button1= new JButton("+");
         JButton button2= new JButton("-");
@@ -37,7 +37,23 @@ public class Project extends JFrame{
             this.add(buttonPanel,BorderLayout.SOUTH);
         }
 
+    //중간
+        public class statusPanel extends JPanel {
+    JButton button3 = new JButton("입력");
 
+    public statusPanel(){
+        this.setLayout(new BorderLayout());
+        JLabel current = new JLabel();
+        this.add(current,BorderLayout.CENTER);
+    }
+    }
+
+
+
+
+
+
+    //하단
 
     }
 

@@ -1,4 +1,4 @@
-package ÀÚÆÇ±â;
+package ï¿½ï¿½ï¿½Ç±ï¿½;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,31 +11,31 @@ public class Machine extends JFrame implements MouseListener{
     private JPanel Border = new JPanel(new BorderLayout());
     private JPanel Flow = new JPanel(new FlowLayout());
    
-    private JButton ¶ó¸é = new JButton("¶ó¸é : 3000");
-    private JButton ÇÜ¹ö°Å = new JButton("ÇÜ¹ö°Å : 3500");
-    private JButton ÄÝ¶ó = new JButton("ÄÝ¶ó : 2500");
-    private JButton °áÁ¤ = new JButton("°áÁ¤");
+    private JButton ï¿½ï¿½gï¿½ = new JButton("ï¿½ï¿½ï¿½ : 3000");
+    private JButton ï¿½Ü¹ï¿½ï¿½ï¿½ = new JButton("ï¿½Ü¹ï¿½ï¿½ï¿½ : 3500");
+    private JButton ï¿½Ý¶ï¿½ = new JButton("ï¿½Ý¶ï¿½ : 2500");
+    private JButton ï¿½ï¿½ï¿½ï¿½ = new JButton("ï¿½ï¿½ï¿½ï¿½");
     
     
-    private JTextField j1 = new JTextField("0");  //ÆÇ¸Å±Ý¾×
-    private JTextField j2 = new JTextField("0");  //¶ó¸é ÆÇ¸Å¼ö
-    private JTextField j3 = new JTextField("0");  //ÇÜ¹ö°Å ÆÇ¸Å¼ö
-    private JTextField j4 = new JTextField("0");  //ÄÝ¶ó ÆÇ¸Å¼ö
+    private JTextField j1 = new JTextField("0");  //ï¿½Ç¸Å±Ý¾ï¿½
+    private JTextField j2 = new JTextField("0");  //ï¿½ï¿½ï¿½ ï¿½Ç¸Å¼ï¿½
+    private JTextField j3 = new JTextField("0");  //ï¿½Ü¹ï¿½ï¿½ï¿½ ï¿½Ç¸Å¼ï¿½
+    private JTextField j4 = new JTextField("0");  //ï¿½Ý¶ï¿½ ï¿½Ç¸Å¼ï¿½
  
-    private JLabel JL1 = new JLabel("¶ó¸é");
-    private JLabel JL2 = new JLabel("ÇÜ¹ö°Å");
-    private JLabel JL3 = new JLabel("ÄÝ¶ó");
-    ImageIcon img = new ImageIcon("images/ÀÚÆÇ±â.png"); 
+    private JLabel JL1 = new JLabel("ï¿½ï¿½ï¿½");
+    private JLabel JL2 = new JLabel("ï¿½Ü¹ï¿½ï¿½ï¿½");
+    private JLabel JL3 = new JLabel("ï¿½Ý¶ï¿½");
+    ImageIcon img = new ImageIcon("images/ï¿½ï¿½ï¿½Ç±ï¿½.png"); 
 	JLabel imageLabel = new JLabel(img);
 
     
-    private static int Num1=0;       //¶ó¸é ÃÑ°³¼ö
-    private static int Num2=0;       //ÇÜ¹ö°Å ÃÑ°³¼ö
-    private static int Num3=0;       //ÄÝ¶ó ÃÑ°³¼ö
-    private static int Num4=0;       //ÃÑ°³¼ö
+    private static int Num1=0;       //ï¿½ï¿½ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½
+    private static int Num2=0;       //ï¿½Ü¹ï¿½ï¿½ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½
+    private static int Num3=0;       //ï¿½Ý¶ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½
+    private static int Num4=0;       //ï¿½Ñ°ï¿½ï¿½ï¿½
     
     public Machine(){
-          super("ÀÚÆÇ±â");
+          super("ï¿½ï¿½ï¿½Ç±ï¿½");
           init();
           start();
     }
@@ -44,10 +44,10 @@ public class Machine extends JFrame implements MouseListener{
     public void init(){
           this.setSize(550,400);     
           
-          Flow.add(¶ó¸é);              //¶ó¸é ¹öÆ°À» Ãß°¡.
-          Flow.add(ÇÜ¹ö°Å);             //ÇÜ¹ö°Å ¹öÆ°À» Ãß°¡.
-          Flow.add(ÄÝ¶ó);              //ÄÝ¶ó ¹öÆ°À» Ãß°¡.
-          Flow.add(°áÁ¤);              //°áÁ¤
+          Flow.add(ï¿½ï¿½ï¿½);              //ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ß°ï¿½.
+          Flow.add(ï¿½Ü¹ï¿½ï¿½ï¿½);             //ï¿½Ü¹ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ß°ï¿½.
+          Flow.add(ï¿½Ý¶ï¿½);              //ï¿½Ý¶ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ß°ï¿½.
+          Flow.add(ï¿½ï¿½ï¿½ï¿½);              //ï¿½ï¿½ï¿½ï¿½
           Flow.add(imageLabel);                           
           
           
@@ -59,48 +59,48 @@ public class Machine extends JFrame implements MouseListener{
     
     public void start(){
          
-          ¶ó¸é.addMouseListener(this);
-          ÇÜ¹ö°Å.addMouseListener(this);
-          ÄÝ¶ó.addMouseListener(this);
-          °áÁ¤.addMouseListener(this);
+          ï¿½ï¿½ï¿½.addMouseListener(this);
+          ï¿½Ü¹ï¿½ï¿½ï¿½.addMouseListener(this);
+          ï¿½Ý¶ï¿½.addMouseListener(this);
+          ï¿½ï¿½ï¿½ï¿½.addMouseListener(this);
     }
     
 
     public void mouseClicked(MouseEvent e) {
          
           int val=0;
-          if(e.getSource()==(JButton)¶ó¸é){
+          if(e.getSource()==(JButton)ï¿½ï¿½ï¿½){
                  val = Integer.parseInt(j1.getText());
                  
-                 //°¡°Ý¿¡ ¶ó¸é+
+                 //ï¿½ï¿½ï¿½Ý¿ï¿½ ï¿½ï¿½ï¿½+
                  val=val+3000;
-                 //¶ó¸é °³¼ö
+                 //ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                  this.Num1=this.Num1+1;
                  
                  j2.setText(String.valueOf(Num1));
                  j1.setText(String.valueOf(val));
                  }
-          			else if(e.getSource()==(JButton)ÇÜ¹ö°Å){
+          			else if(e.getSource()==(JButton)ï¿½Ü¹ï¿½ï¿½ï¿½){
           			val = Integer.parseInt(j1.getText());
-          			//°¡°Ý¿¡ ÇÜ¹ö°Å+
+          			//ï¿½ï¿½ï¿½Ý¿ï¿½ ï¿½Ü¹ï¿½ï¿½ï¿½+
           			val=val+3500;
-          			//ÇÜ¹ö°Å °³¼ö
+          			//ï¿½Ü¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
           			this.Num2=this.Num2+1;
           			j3.setText(String.valueOf(Num2));
           			j1.setText(String.valueOf(val));
           			}
-          			else if(e.getSource()==(JButton)ÄÝ¶ó){
+          			else if(e.getSource()==(JButton)ï¿½Ý¶ï¿½){
           			val = Integer.parseInt(j1.getText());
-          			//°¡°Ý¿¡ ÄÝ¶ó+
+          			//ï¿½ï¿½ï¿½Ý¿ï¿½ ï¿½Ý¶ï¿½+
           			val=val+2500;
-          			//ÄÝ¶ó °³¼ö
+          			//ï¿½Ý¶ï¿½ ï¿½ï¿½ï¿½ï¿½
           			this.Num3=this.Num3+1;
           			j4.setText(String.valueOf(Num3));
           			j1.setText(String.valueOf(val));
                     }
-          			else if(e.getSource()==(JButton)°áÁ¤){
+          			else if(e.getSource()==(JButton)ï¿½ï¿½ï¿½ï¿½){
                 	  this.Num4=this.Num4+1;
-                	  j1.setText(String.valueOf(val)); //°áÁ¤
+                	  j1.setText(String.valueOf(val)); //ï¿½ï¿½ï¿½ï¿½
               
           }     
         
