@@ -86,7 +86,7 @@ public class Project extends JFrame implements MouseListener{
         public MenuPanel1() {
 
             this.setLayout(new BorderLayout());
-            ImageIcon img = new ImageIcon();
+            ImageIcon img = new ImageIcon("images/1.1.jpg");
             JLabel imageLabel1 = new JLabel(img);
             JLabel label = new JLabel();
             JPanel buttonPanel = new JPanel();
@@ -142,7 +142,7 @@ public class Project extends JFrame implements MouseListener{
 
         public MenuPanel3() {
             this.setLayout(new BorderLayout());
-            ImageIcon img = new ImageIcon();
+            ImageIcon img = new ImageIcon("images/3.3.jpg");
             JLabel imageLabel3 = new JLabel(img);
             JPanel buttonPanel = new JPanel();
 
