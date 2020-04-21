@@ -35,6 +35,10 @@ public class Project extends JFrame implements MouseListener{
         this.setSize(500, 500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        ImageIcon img1 = new ImageIcon("images/9.jpg");
+        this.setIconImage(img1.getImage());
+
+
         JPanel NorthPanel = new JPanel(new BorderLayout());
         JPanel CenterPanel = new JPanel(new GridLayout(0, 3));
         JPanel SouthPanel = new JPanel(new BorderLayout());
