@@ -4,11 +4,7 @@ import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.*;
 
-<<<<<<< HEAD
-public class Project extends JFrame implements MouseListener {
-=======
 public class Project extends JFrame implements MouseListener{
->>>>>>> final
 
 
     int [] unit= {50000,10000,1000,500,100,50,10,1};
@@ -20,25 +16,15 @@ public class Project extends JFrame implements MouseListener{
     public static int Num1 = 0;
     public static int Num2 = 0;
     public static int Num3 = 0;
-<<<<<<< HEAD
-
-    public int val = 0;
-
-=======
     public int gap=5;
     public int val = 0,k3value;
     public int input=0;
->>>>>>> final
     public JTextField j1 = new JTextField("0");
     public JTextField j2 = new JTextField("0");
     public JTextField j3 = new JTextField("0");
     public JTextField j4 = new JTextField("0");
-<<<<<<< HEAD
-
-=======
     public JTextField j5 = new JTextField("0");
     public JTextField e1=new JTextField("");
->>>>>>> final
     public JLabel JL1 = new JLabel("Modongsoop amount");
     public JLabel JL2 = new JLabel("StarCubby amount");
     public JLabel JL3 = new JLabel("Super Mario amount");
@@ -50,24 +36,18 @@ public class Project extends JFrame implements MouseListener{
     public JButton PPlus = new JButton("+");
     public JButton PMinus = new JButton("-");
 
-<<<<<<< HEAD
-=======
     JButton Purchase = new JButton("buy");
     JLabel 금액=new JLabel("투입금액");
 
->>>>>>> final
     public void main() {
 
         this.setSize(500, 500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-<<<<<<< HEAD
-=======
         ImageIcon img1 = new ImageIcon("images/9.jpg");
         this.setIconImage(img1.getImage());
 
 
->>>>>>> final
         JPanel NorthPanel = new JPanel(new BorderLayout());
         JPanel CenterPanel = new JPanel(new GridLayout(0, 3));
         JPanel SouthPanel = new JPanel(new BorderLayout());
@@ -78,10 +58,6 @@ public class Project extends JFrame implements MouseListener{
         Title.setBounds(12, 10, 460, 29);
         this.getContentPane().add(Title);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> final
         NorthPanel.add(Title, BorderLayout.NORTH);
 
         CenterPanel.add(new MenuPanel1());
@@ -91,10 +67,6 @@ public class Project extends JFrame implements MouseListener{
         SouthPanel.add(new ListPanel(), BorderLayout.CENTER);
         SouthPanel.add(new InputPanel(), BorderLayout.SOUTH);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> final
         NorthPanel.setPreferredSize(new Dimension(50, 50));
         CenterPanel.setPreferredSize(new Dimension(250, 250));
         SouthPanel.setPreferredSize(new Dimension(150, 150));
@@ -107,7 +79,7 @@ public class Project extends JFrame implements MouseListener{
         start();
     }
 
-    public void start() {
+    public void start(){
 
         HPlus.addMouseListener(this);
         HMinus.addMouseListener(this);
@@ -118,26 +90,14 @@ public class Project extends JFrame implements MouseListener{
 
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> final
     public class MenuPanel1 extends JPanel {
 
         public MenuPanel1() {
 
+            this.setLayout(new BorderLayout());
             ImageIcon img = new ImageIcon("images/1.1.jpg");
             JLabel imageLabel1 = new JLabel(img);
-            JLabel label = new JLabel();
-            JPanel buttonPanel = new JPanel();
 
-<<<<<<< HEAD
-            this.setLayout(new BorderLayout());
-            this.add(label, BorderLayout.CENTER);
-            this.setBorder(new LineBorder(Color.BLACK));
-            this.add(imageLabel1, BorderLayout.CENTER);
-            this.add(buttonPanel, BorderLayout.SOUTH);
-=======
             JPanel buttonPanel = new JPanel();
 
             JLabel label1 = new JLabel();
@@ -149,24 +109,16 @@ public class Project extends JFrame implements MouseListener{
 
             this.add(label1, BorderLayout.CENTER);
             this.setBorder(new LineBorder(Color.BLACK));
->>>>>>> final
 
             buttonPanel.add(HMinus);
             buttonPanel.add(HPlus);
 
-<<<<<<< HEAD
-=======
             this.add(buttonPanel, BorderLayout.SOUTH);
 
->>>>>>> final
         }
 
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> final
     public class MenuPanel2 extends JPanel {
 
         public MenuPanel2() {
@@ -175,10 +127,6 @@ public class Project extends JFrame implements MouseListener{
             ImageIcon img = new ImageIcon("images/2.2.jpg");
             img.getIconWidth();
             JLabel imageLabel2 = new JLabel(img);
-<<<<<<< HEAD
-            this.add(imageLabel2, BorderLayout.CENTER);
-            this.setBorder(new LineBorder(Color.BLACK));
-=======
 
             this.setBorder(new LineBorder(Color.BLACK));
 
@@ -190,7 +138,6 @@ public class Project extends JFrame implements MouseListener{
             much2.setHorizontalAlignment(SwingConstants.CENTER);
             this.add(label2, BorderLayout.CENTER);
 
->>>>>>> final
             JPanel buttonPanel = new JPanel();
             buttonPanel.add(CMinus);
             buttonPanel.add(CPlus);
@@ -201,24 +148,13 @@ public class Project extends JFrame implements MouseListener{
 
     }
 
-<<<<<<< HEAD
-
-    public class MenuPanel3 extends JPanel {
-
-=======
     public class MenuPanel3 extends JPanel {
 
 
->>>>>>> final
         public MenuPanel3() {
             this.setLayout(new BorderLayout());
             ImageIcon img = new ImageIcon("images/3.3.jpg");
             JLabel imageLabel3 = new JLabel(img);
-<<<<<<< HEAD
-            this.add(imageLabel3, BorderLayout.CENTER);
-            this.setBorder(new LineBorder(Color.BLACK));
-            JPanel buttonPanel = new JPanel();
-=======
             JPanel buttonPanel = new JPanel();
 
             this.setBorder(new LineBorder(Color.BLACK));
@@ -230,7 +166,6 @@ public class Project extends JFrame implements MouseListener{
             label3.add(much3,BorderLayout.SOUTH);
             much3.setHorizontalAlignment(SwingConstants.CENTER);
             this.add(label3, BorderLayout.CENTER);
->>>>>>> final
 
             buttonPanel.add(PMinus);
             buttonPanel.add(PPlus);
@@ -244,15 +179,9 @@ public class Project extends JFrame implements MouseListener{
 
     public class ListPanel extends JPanel {
 
-<<<<<<< HEAD
-        JPanel list = new JPanel(new GridLayout(2, 4));
-        JPanel BottomLabel = new JPanel(new BorderLayout());
-
-=======
         JPanel list = new JPanel(new GridLayout(2, 3));
         JPanel Total = new JPanel();
         JPanel BottomLabel = new JPanel(new BorderLayout());
->>>>>>> final
         public ListPanel() {
 
             this.setLayout(new BorderLayout());
@@ -273,23 +202,6 @@ public class Project extends JFrame implements MouseListener{
             JOptionPane.showMessageDialog(null,"수량을 다 선택한 뒤 투입금액을 입력하고 buy를 눌러주세요");
             this.setVisible(true);
 
-<<<<<<< HEAD
-        }
-
-    }
-
-
-    public class InputPanel extends JPanel {
-
-        JButton Purchase = new JButton("buy");
-
-        public InputPanel() {
-
-            this.setLayout(new BorderLayout());
-            this.add(Purchase, BorderLayout.EAST);
-
-=======
->>>>>>> final
         }
 
     }
@@ -297,30 +209,6 @@ public class Project extends JFrame implements MouseListener{
     public void mouseClicked(MouseEvent e) {
 
 
-<<<<<<< HEAD
-        if (e.getSource() == (JButton) HPlus) {
-            val = Integer.parseInt(j1.getText());
-            val = val + 3000;
-            this.Num1 = this.Num1 + 1;
-            j2.setText(String.valueOf(Num1));
-            j1.setText(String.valueOf(val));
-        } else if (e.getSource() == (JButton) HMinus) {
-            val = Integer.parseInt(j1.getText());
-            val = val - 3000;
-            this.Num1 = this.Num1 - 1;
-            j2.setText(String.valueOf(Num1));
-            j1.setText(String.valueOf(val));
-        } else if (e.getSource() == (JButton) CPlus) {
-            val = Integer.parseInt(j1.getText());
-            val = val + 3500;
-            this.Num2 = this.Num2 + 1;
-            j3.setText(String.valueOf(Num2));
-            j1.setText(String.valueOf(val));
-        } else if (e.getSource() == (JButton) CMinus) {
-            val = Integer.parseInt(j1.getText());
-            val = val - 3500;
-            this.Num2 = this.Num2 - 1;
-=======
 
         if(e.getSource()==(JButton)HPlus){
             val = Integer.parseInt(j1.getText());
@@ -355,21 +243,12 @@ public class Project extends JFrame implements MouseListener{
             val = Integer.parseInt(j1.getText());
             val=val-16980;
             this.Num2=this.Num2-1;
->>>>>>> final
             j3.setText(String.valueOf(Num2));
             j1.setText(String.valueOf(val));
-        } else if (e.getSource() == (JButton) PPlus) {
+        }
+
+        else if(e.getSource()==(JButton)PPlus){
             val = Integer.parseInt(j1.getText());
-<<<<<<< HEAD
-            val = val + 2500;
-            this.Num3 = this.Num3 + 1;
-            j4.setText(String.valueOf(Num3));
-            j1.setText(String.valueOf(val));
-        } else if (e.getSource() == (JButton) PMinus) {
-            val = Integer.parseInt(j1.getText());
-            val = val - 2500;
-            this.Num3 = this.Num3 - 1;
-=======
             val=val+52390;
             this.Num3=this.Num3+1;
             j4.setText(String.valueOf(Num3));
@@ -380,7 +259,6 @@ public class Project extends JFrame implements MouseListener{
             val = Integer.parseInt(j1.getText());
             val=val-52390;
             this.Num3=this.Num3-1;
->>>>>>> final
             j4.setText(String.valueOf(Num3));
             j1.setText(String.valueOf(val));
         }
@@ -414,8 +292,6 @@ public class Project extends JFrame implements MouseListener{
         JTextField e1=new JTextField("");
         public InputPanel() {
 
-<<<<<<< HEAD
-=======
             this.add(list2, BorderLayout.CENTER);
 
             list2.add(금액);
@@ -484,13 +360,14 @@ public class Project extends JFrame implements MouseListener{
 
 
     }
->>>>>>> final
     public static void main(String args[]) {
+
 
 
         Project project = new Project();
 
         project.main();
+
 
 
     }
