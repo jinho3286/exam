@@ -101,7 +101,7 @@ public class Project extends JFrame implements MouseListener{
             JPanel buttonPanel = new JPanel();
 
             JLabel label1 = new JLabel();
-            JLabel much1 = new JLabel("3000원");
+            JLabel much1 = new JLabel("63504원");
             label1.setLayout(new BorderLayout());
             label1.add(imageLabel1, BorderLayout.CENTER);
             label1.add(much1,BorderLayout.SOUTH);
@@ -131,7 +131,7 @@ public class Project extends JFrame implements MouseListener{
             this.setBorder(new LineBorder(Color.BLACK));
 
             JLabel label2 = new JLabel();
-            JLabel much2 = new JLabel("3500원");
+            JLabel much2 = new JLabel("16980원");
             label2.setLayout(new BorderLayout());
             label2.add(imageLabel2, BorderLayout.CENTER);
             label2.add(much2,BorderLayout.SOUTH);
@@ -160,7 +160,7 @@ public class Project extends JFrame implements MouseListener{
             this.setBorder(new LineBorder(Color.BLACK));
 
             JLabel label3 = new JLabel();
-            JLabel much3 = new JLabel("2500원");
+            JLabel much3 = new JLabel("52390원");
             label3.setLayout(new BorderLayout());
             label3.add(imageLabel3, BorderLayout.CENTER);
             label3.add(much3,BorderLayout.SOUTH);
@@ -212,7 +212,7 @@ public class Project extends JFrame implements MouseListener{
 
         if(e.getSource()==(JButton)HPlus){
             val = Integer.parseInt(j1.getText());
-            val=val+3000;
+            val=val+63504;
             this.Num1=this.Num1+1;
             j2.setText(String.valueOf(Num1));
             j1.setText(String.valueOf(val));
@@ -220,7 +220,7 @@ public class Project extends JFrame implements MouseListener{
 
         else if(e.getSource()==(JButton)HMinus && Num1>=1){
             val = Integer.parseInt(j1.getText());
-            val=val-3000;
+            val=val-63504;
             this.Num1=this.Num1-1;
 
             j2.setText(String.valueOf(Num1));
@@ -233,7 +233,7 @@ public class Project extends JFrame implements MouseListener{
 
         else if(e.getSource()==(JButton)CPlus){
             val = Integer.parseInt(j1.getText());
-            val=val+3500;
+            val=val+16980;
             this.Num2=this.Num2+1;
             j3.setText(String.valueOf(Num2));
             j1.setText(String.valueOf(val));
@@ -241,7 +241,7 @@ public class Project extends JFrame implements MouseListener{
 
         else if(e.getSource()==(JButton)CMinus && Num2>=1){
             val = Integer.parseInt(j1.getText());
-            val=val-3500;
+            val=val-16980;
             this.Num2=this.Num2-1;
             j3.setText(String.valueOf(Num2));
             j1.setText(String.valueOf(val));
@@ -249,7 +249,7 @@ public class Project extends JFrame implements MouseListener{
 
         else if(e.getSource()==(JButton)PPlus){
             val = Integer.parseInt(j1.getText());
-            val=val+2500;
+            val=val+52390;
             this.Num3=this.Num3+1;
             j4.setText(String.valueOf(Num3));
             j1.setText(String.valueOf(val));
@@ -257,7 +257,7 @@ public class Project extends JFrame implements MouseListener{
 
         else if(e.getSource()==(JButton)PMinus && Num3>=1){
             val = Integer.parseInt(j1.getText());
-            val=val-2500;
+            val=val-52390;
             this.Num3=this.Num3-1;
             j4.setText(String.valueOf(Num3));
             j1.setText(String.valueOf(val));
