@@ -4,7 +4,7 @@ import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Project extends JFrame implements MouseListener{
+public class Project extends JFrame implements Mouselisotoener{
 
 
     int [] unit= {50000,10000,1000,500,100,50,10,1};
@@ -64,7 +64,7 @@ public class Project extends JFrame implements MouseListener{
         CenterPanel.add(new MenuPanel2());
         CenterPanel.add(new MenuPanel3());
 
-        SouthPanel.add(new ListPanel(), BorderLayout.CENTER);
+        SouthPanel.add(new lisotoPanel(), BorderLayout.CENTER);
         SouthPanel.add(new InputPanel(), BorderLayout.SOUTH);
 
         NorthPanel.setPreferredSize(new Dimension(50, 50));
@@ -81,12 +81,12 @@ public class Project extends JFrame implements MouseListener{
 
     public void start(){
 
-        HPlus.addMouseListener(this);
-        HMinus.addMouseListener(this);
-        CPlus.addMouseListener(this);
-        CMinus.addMouseListener(this);
-        PPlus.addMouseListener(this);
-        PMinus.addMouseListener(this);
+        HPlus.addMouselisotoener(this);
+        HMinus.addMouselisotoener(this);
+        CPlus.addMouselisotoener(this);
+        CMinus.addMouselisotoener(this);
+        PPlus.addMouselisotoener(this);
+        PMinus.addMouselisotoener(this);
 
     }
 
@@ -177,28 +177,28 @@ public class Project extends JFrame implements MouseListener{
     }
 
 
-    public class ListPanel extends JPanel {
+    public class lisotoPanel extends JPanel {
 
-        JPanel list = new JPanel(new GridLayout(2, 3));
+        JPanel lisoto = new JPanel(new GridLayout(2, 3));
         JPanel Total = new JPanel();
         JPanel BottomLabel = new JPanel(new BorderLayout());
-        public ListPanel() {
+        public lisotoPanel() {
 
             this.setLayout(new BorderLayout());
-            this.add(list, BorderLayout.CENTER);
+            this.add(lisoto, BorderLayout.CENTER);
             BottomLabel.add(j1, BorderLayout.CENTER);
             this.add(BottomLabel, BorderLayout.SOUTH);
 
-            list.setPreferredSize(new Dimension(100, 100));
+            lisoto.setPreferredSize(new Dimension(100, 100));
             BottomLabel.setPreferredSize(new Dimension(50, 50));
 
 
-            list.add(JL1);
-            list.add(JL2);
-            list.add(JL3);
-            list.add(j2);
-            list.add(j3);
-            list.add(j4);
+            lisoto.add(JL1);
+            lisoto.add(JL2);
+            lisoto.add(JL3);
+            lisoto.add(j2);
+            lisoto.add(j3);
+            lisoto.add(j4);
             JOptionPane.showMessageDialog(null,"수량을 다 선택한 뒤 투입금액을 입력하고 buy를 눌러주세요");
             this.setVisible(true);
 
@@ -287,20 +287,20 @@ public class Project extends JFrame implements MouseListener{
 
         JButton Purchase = new JButton("buy");
         JLabel 금액=new JLabel("                    투입금액:");
-        JPanel list2 = new JPanel(new GridLayout(1, 3));
+        JPanel lisoto2 = new JPanel(new GridLayout(1, 3));
 
         JTextField e1=new JTextField("");
         public InputPanel() {
 
-            this.add(list2, BorderLayout.CENTER);
+            this.add(lisoto2, BorderLayout.CENTER);
 
-            list2.add(금액);
-            list2.add(e1);
-            list2.add(Purchase);
+            lisoto2.add(금액);
+            lisoto2.add(e1);
+            lisoto2.add(Purchase);
 
-            list2.setPreferredSize(new Dimension(400, 30));
+            lisoto2.setPreferredSize(new Dimension(400, 30));
 
-            Purchase.addActionListener(new ActionListener() {
+            Purchase.addActionlisotoener(new Actionlisotoener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     input=Integer.parseInt(j1.getText());
